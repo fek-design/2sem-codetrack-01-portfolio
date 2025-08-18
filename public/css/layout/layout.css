@@ -159,3 +159,9 @@ footer {
         color: var(--color-primary);
     }
 }
+
+
+/* Sticky class applied on scroll */
+.navigation-bar {
+    position: fixed;
+}
