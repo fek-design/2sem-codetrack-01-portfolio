@@ -13,77 +13,49 @@
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header class="navigation-bar">
-        <div class="container">
-            <div class="header-content">
+<header class="navigation-bar">
+    <div class="container d-flex col-auto">
 
-                <nav class="main-nav">
-                    <ul>
-                        <li>
-                            <a href="/">
-                                FEKDESIGN
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/about">
-                                ABOUT
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/projects">
-                                PROJECTS
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/skills">
-                                SKILLS
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/contact">
-                                CONTACTS
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/test">
-                                test
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <?php if (isset($_SESSION['user_id'])): ?>
-                    <nav class="user-nav">
-                        <ul>
-                            <li>
-                                <a href="/admin/dashboard">
-                                    Dashboard
-                                </a>
-                            </li>
-                            <li>
-                                <form
-                                    method="POST"
-                                    action="/logout"
-                                    class="logout-form"
-                                >
-                                    <input
-                                        type="hidden"
-                                        name="_token"
-                                        value="<?= htmlspecialchars($request->getCsrfToken()) ?>"
-                                    >
-                                    <button type="submit">
-                                        Logout
-                                    </button>
-                                </form>
-                            </li>
-                        </ul>
-                    </nav>
-                <?php endif; ?>
-        </div>
-    </header>
+        <a href="/" class="text-white text-center font-bold">FEKDESIGN</a>
+    </div>
+
+    <div>
+        <nav class="main-nav">
+
+            <ul>
+                <li>
+                    <a href="/about">
+                        ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="/projects">
+                        PROJECTS
+                    </a>
+                </li>
+                <li>
+                    <a href="/skills">
+                        SKILLS
+                    </a>
+                </li>
+                <li>
+                    <a href="/contact">
+                        CONTACTS
+                    </a>
+                </li>
+                <li>
+                    <a href="/test">
+                        test
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <div class="alerts">
         <?php if (!empty($success)): ?>
@@ -113,10 +85,7 @@
         <div class="footer-content">
             <p class="copyright">
                 &copy; <?= date('Y') ?>
-                FekDesign - My Portfolio. All rights reserved.
-            </p>
-            <p class="footer-links">
-                <a href="/login" class="admin-link">Login</a>
+                FekDesign. All rights reserved.
             </p>
         </div>
     </footer>
