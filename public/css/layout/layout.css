@@ -57,11 +57,12 @@ header.navigation-bar {
     background-color: var(--color-nav-bg);
     color: var(--color-nav-text);
     padding: var(--space-sm) 0;
+
 }
 
 .header-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: var(--space-sm);
@@ -75,6 +76,7 @@ header.navigation-bar {
 .user-nav ul {
     list-style: none;
     display: flex;
+    flex-direction: row;
     margin: 0;
     padding: 0;
     align-items: center;
@@ -165,3 +167,5 @@ footer {
 .navigation-bar {
     position: fixed;
 }
+
+

@@ -1,0 +1,21 @@
+.skills-section {
+    padding: var(--space-xl) 0;
+}
+
+.skill-category {
+    margin-bottom: var(--space-lg);
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    margin-top: var(--space-sm);
+}
+
+.skill-list li {
+    background: var(--color-bg);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-sm);
+}

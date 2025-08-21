@@ -20,26 +20,37 @@
     <header class="navigation-bar">
         <div class="container">
             <div class="header-content">
+
                 <nav class="main-nav">
                     <ul>
                         <li>
                             <a href="/">
-                                Home
+                                FEKDESIGN
                             </a>
                         </li>
                         <li>
                             <a href="/about">
-                                About
+                                ABOUT
                             </a>
                         </li>
                         <li>
                             <a href="/projects">
-                                Projects
+                                PROJECTS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/skills">
+                                SKILLS
                             </a>
                         </li>
                         <li>
                             <a href="/contact">
-                                Contact
+                                CONTACTS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/test">
+                                test
                             </a>
                         </li>
                     </ul>
@@ -102,7 +113,7 @@
         <div class="footer-content">
             <p class="copyright">
                 &copy; <?= date('Y') ?>
-                My Portfolio. All rights reserved.
+                FekDesign - My Portfolio. All rights reserved.
             </p>
             <p class="footer-links">
                 <a href="/login" class="admin-link">Login</a>

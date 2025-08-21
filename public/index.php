@@ -23,6 +23,8 @@ $router->get('/about', [HomeController::class, 'about']);
 $router->get('/projects', [ProjectController::class, 'index']);
 $router->get('/contact', [ContactController::class, 'index']);
 $router->post('/contact', [ContactController::class, 'post']);
+$router->get('/skills', [HomeController::class, 'skills']);
+$router->get('/test', [HomeController::class, 'test']);
 $router->get('/login', [LoginController::class, 'index']);
 $router->post('/login', [LoginController::class, 'login']);
 $router->post('/logout', [LoginController::class, 'logout']);

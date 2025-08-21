@@ -48,4 +48,38 @@ class HomeController extends Controller
         ]);
         return $response;
     }
+
+    // In src/Controllers/HomeController.php
+    public function skills(Request $request): Response
+    {
+        $response = new Response();
+        $skills = [
+            'Frontend' => ['HTML', 'CSS', 'JavaScript'],
+            'Backend' => ['PHP', 'Node.js', 'Python']
+        ];
+
+        $response->setTemplate($this->template, 'skills', [
+            'skills' => $skills,
+            'pageTitle' => 'My Skills'
+        ]);
+        return $response;
+    }
+
+    public function test(Request $request): Response
+    {
+        $response = new Response();
+        $test = [
+            'Frontend' => ['HTML', 'CSS', 'JavaScript'],
+            'Backend' => ['PHP', 'Node.js', 'Python']
+        ];
+
+        $response->setTemplate($this->template, 'test', [
+            'test' => $test,
+            'pageTitle' => 'My Test Page'
+        ]);
+        return $response;
+    }
+
 }
+
+
